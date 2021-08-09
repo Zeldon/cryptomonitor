@@ -1,2 +1,3 @@
-# crytomonitor
-To Monitor Crypto Stuff
+# React App to Track some Crypto Stuff and News.
+
+Stay tuned for more...
