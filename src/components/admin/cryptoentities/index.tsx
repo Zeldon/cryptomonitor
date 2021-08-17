@@ -8,13 +8,15 @@ import {List, Datagrid,
     DateTimeInput,
     Filter, SearchInput } from 'react-admin';
 import SimpleChipField from "../simplechipfield";
-// const CustomerFilter = (props) => (
-// <Filter {...props}>
-//     <SearchInput placeholder='Customer Email' 
-//                     source='email' resettable alwaysOn />
-// </Filter>
 
-// )
+const ListFilters = [
+    <TextInput source="name" label="Search Name" alwaysOn />,
+    <TextInput source="symbol" label="Symbol" allowEmpty alwaysOn/>,
+    <TextInput source="entitytype" label="Entity-Type" allowEmpty />,
+    <TextInput source="ecosystem" label="Ecosystem" allowEmpty />,
+    <TextInput source="category" label="Category" allowEmpty alwaysOn/>,
+    <TextInput source="affiliatedto" label="Affiliated-To" allowEmpty alwaysOn/>
+]
 
 const entitytypeChoices = [
     {id:"Project", name:"Project"}, 
@@ -47,9 +49,16 @@ const categoryChoices = [
     {id: "Hype", name: "Hype"},
 ]
 
+const ListTitle = (record: any) => {
+    return <span>Record: {record.record ? 
+                `"${record.record.name}"` : 
+                'Unknown'}
+                </span>;
+};
+
 function CryptoEntitiesList(props){
     return (
-        <List { ...props } 
+        <List filters={ListFilters} { ...props } 
             //filters={<CustomerFilter/>}
             >
             <Datagrid>
@@ -98,7 +107,7 @@ function CryptoEntitiesList(props){
 
 export const CryptoEEdit: React.FC = (props) => {
     return (
-        <Edit {...props}>
+        <Edit title={< ListTitle />} {...props}>
             <SimpleForm>
                 <TextInput source="name"/>
                 <TextInput source="symbol"/>
