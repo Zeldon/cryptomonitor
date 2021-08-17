@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/cryptomonitor/static/js/main.7784624a.chunk.js",
-    "main.js.map": "/cryptomonitor/static/js/main.7784624a.chunk.js.map",
+    "main.js": "/cryptomonitor/static/js/main.d2a50620.chunk.js",
+    "main.js.map": "/cryptomonitor/static/js/main.d2a50620.chunk.js.map",
     "runtime-main.js": "/cryptomonitor/static/js/runtime-main.e87b688e.js",
     "runtime-main.js.map": "/cryptomonitor/static/js/runtime-main.e87b688e.js.map",
-    "static/js/2.ea4f75c8.chunk.js": "/cryptomonitor/static/js/2.ea4f75c8.chunk.js",
-    "static/js/2.ea4f75c8.chunk.js.map": "/cryptomonitor/static/js/2.ea4f75c8.chunk.js.map",
+    "static/js/2.51a2e83a.chunk.js": "/cryptomonitor/static/js/2.51a2e83a.chunk.js",
+    "static/js/2.51a2e83a.chunk.js.map": "/cryptomonitor/static/js/2.51a2e83a.chunk.js.map",
     "index.html": "/cryptomonitor/index.html",
-    "static/js/2.ea4f75c8.chunk.js.LICENSE.txt": "/cryptomonitor/static/js/2.ea4f75c8.chunk.js.LICENSE.txt"
+    "static/js/2.51a2e83a.chunk.js.LICENSE.txt": "/cryptomonitor/static/js/2.51a2e83a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e87b688e.js",
-    "static/js/2.ea4f75c8.chunk.js",
-    "static/js/main.7784624a.chunk.js"
+    "static/js/2.51a2e83a.chunk.js",
+    "static/js/main.d2a50620.chunk.js"
   ]
 }
